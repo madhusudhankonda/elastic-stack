@@ -1,0 +1,18 @@
+Using bundled JDK: /Users/mkonda/DEV/platform/logstash-7.12.0/jdk.app/Contents/Home
+Sending Logstash logs to /Users/mkonda/DEV/platform/logstash-7.12.0/logs which is now configured via log4j2.properties
+[2021-04-02T00:01:04,083][INFO ][logstash.runner          ] Log4j configuration path used is: /Users/mkonda/DEV/platform/logstash-7.12.0/config/log4j2.properties
+[2021-04-02T00:01:04,107][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.12.0", "jruby.version"=>"jruby 9.2.13.0 (2.5.7) 2020-08-03 9a89c94bcc OpenJDK 64-Bit Server VM 11.0.10+9 on 11.0.10+9 +indy +jit [darwin-x86_64]"}
+[2021-04-02T00:01:04,227][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[2021-04-02T00:01:05,782][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2021-04-02T00:01:07,319][INFO ][org.reflections.Reflections] Reflections took 74 ms to scan 1 urls, producing 23 keys and 47 values 
+[2021-04-02T00:01:08,513][INFO ][logstash.javapipeline    ][main] Starting pipeline {:pipeline_id=>"main", "pipeline.workers"=>4, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>50, "pipeline.max_inflight"=>500, "pipeline.sources"=>["/Users/mkonda/DEV/OLT/ELASTIC_STACK/elastic-stack/logstash/conf/file.conf"], :thread=>"#<Thread:0x38e8ee70 run>"}
+[2021-04-02T00:01:10,094][INFO ][logstash.javapipeline    ][main] Pipeline Java execution initialization time {"seconds"=>1.58}
+[2021-04-02T00:01:10,524][INFO ][logstash.inputs.file     ][main] No sincedb_path set, generating one based on the "path" setting {:sincedb_path=>"/Users/mkonda/DEV/platform/logstash-7.12.0/data/plugins/inputs/file/.sincedb_a2646512c5111c2a97f70fc8821d056e", :path=>["/Users/mkonda/DEV/OLT/ELASTIC_STACK/elastic-stack/logstash.txt"]}
+[2021-04-02T00:01:10,605][INFO ][logstash.javapipeline    ][main] Pipeline started {"pipeline.id"=>"main"}
+[2021-04-02T00:01:10,694][INFO ][filewatch.observingtail  ][main][5f92bffc2ff362fbe1b569f714b62de49cc054c916b837dbcb744aef32b7be38] START, creating Discoverer, Watch with file and sincedb collections
+[2021-04-02T00:01:10,707][INFO ][logstash.agent           ] Pipelines running {:count=>1, :running_pipelines=>[:main], :non_running_pipelines=>[]}
+[2021-04-02T00:03:24,341][WARN ][logstash.runner          ] SIGINT received. Shutting down.
+[2021-04-02T00:03:24,401][INFO ][filewatch.observingtail  ] QUIT - closing all files and shutting down.
+[2021-04-02T00:03:24,580][FATAL][logstash.runner          ] SIGINT received. Terminating immediately..
+[2021-04-02T00:03:24,598][FATAL][org.logstash.Logstash    ] 
+org.jruby.exceptions.ThreadKill: null
