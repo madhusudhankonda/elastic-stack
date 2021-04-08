@@ -1,0 +1,53 @@
+# ============================== Filebeat inputs ===============================
+
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /DEV/OLT/ELASTIC_STACK/code/logs/*.log
+    #- c:\programdata\elasticsearch\logs\*
+
+
+# ============================== Filebeat modules ==============================
+
+filebeat.config.modules:
+  # Glob pattern for configuration loading
+  path: ${path.config}/modules.d/*.yml
+
+  # Set to true to enable config reloading
+  reload.enabled: false
+
+  # Period on which files under path should be checked for changes
+  #reload.period: 10s
+
+# ======================= Elasticsearch template setting =======================
+
+setup.template.settings:
+  index.number_of_shards: 1
+  #index.codec: best_compression
+  #_source.enabled: false
+
+
+# ================================= Dashboards =================================
+#setup.dashboards.enabled: false
+
+# =================================== Kibana ===================================
+setup.kibana:
+  #host: "localhost:5601"
+
+# ================================== Outputs ===================================
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["localhost:9200"]
+
+#output.logstash:
+  # The Logstash hosts
+  #hosts: ["localhost:5044"]
+  
+# ================================= Processors =================================
+processors:
+  - add_host_metadata:
+      when.not.contains.tags: forwarded
+  - add_cloud_metadata: ~
+  - add_docker_metadata: ~
+  - add_kubernetes_metadata: ~
