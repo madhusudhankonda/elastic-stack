@@ -2,4 +2,6 @@
 
 ## Filebeat 
 
-Download the filebeat zip from [Filebeat Download](https://www.elastic.co/downloads/beats/filebeat)
+Download the filebeat binary from [download](https://www.elastic.co/downloads/beats/filebeat) page
+
+
