@@ -27,6 +27,8 @@ output {
 ![image](https://user-images.githubusercontent.com/1698230/191788287-8ee38237-5037-41df-b13c-16a7bee2034e.png)
 ```
 
+Now that you have a working version of Logstash with a simple piepline, you can experiment with examples given under elastic-stack/logstash/conf/ directory. 
+
 ## Filebeat 
 
 ### Installation
@@ -48,7 +50,6 @@ filebeat.inputs:
 output.elasticsearch:
   hosts: ["localhost:9200"]
 ```
-
 ### Running
 4. Run the filebeat by issuing the following command:
 `./filebeat -c my.yml -e`
