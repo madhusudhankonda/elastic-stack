@@ -2,10 +2,12 @@
 
 ## Logstash
 
+### Installation
+
 1. Download the Logstash binary from [Logstash binary](https://www.elastic.co/downloads/logstash) page
 2. Unzip the binary/zip to your fav folder
 
-## Running your first pipeline
+### Running your first pipeline
 1. Create a `sample.conf` in the root directory with the following pipeline info:
 
 ```
