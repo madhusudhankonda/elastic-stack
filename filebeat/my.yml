@@ -1,0 +1,10 @@
+# A sample file that tails logs file from a directory and outputs to Elasticsearch
+filebeat.inputs:
+
+- type: log
+  enabled: true
+  paths:
+    - <your-log-file-folder-location>/*.log
+
+output.elasticsearch:
+  hosts: ["localhost:9200"]
