@@ -6,7 +6,7 @@
 1. Download the Elasticsearch binary from [Elasticsearch](https://www.elastic.co/downloads/elasticsearch) page
 2. Unzip the binary/zip to your fav folder
 3. To switch off the security, set the `xpack.security.enabled: false` property in `config/elasticsearch.yml`.
-> :warning: ** PLEASE DO NOT disable security in PRODUCTION **
+> :warning: **PLEASE DO NOT disable security in PRODUCTION**
 
 ### Running 
 
