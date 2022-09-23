@@ -1,5 +1,28 @@
 # elastic-stack
 
+## Elasticsearch
+
+### Installation
+1. Download the Elasticsearch binary from [Elasticsearch](https://www.elastic.co/downloads/elasticsearch) page
+2. Unzip the binary/zip to your fav folder
+3. To switch off the security, set the `xpack.security.enabled: false` property in `config/elasticsearch.yml`.
+> :warning: **Please do not switch of security in production**
+
+### Running 
+
+Go to bin directory and issue the follow command: `./elasticsearch` (for *nix based OSs)
+
+## Kibana
+
+### Installation
+1. Download the Kibana binary from [Elasticsearch](https://www.elastic.co/downloads/kibana) page
+2. Unzip the binary/zip to your fav folder
+
+### Running 
+
+Once the elasticsearch is up and running, go to bin directory and issue the follow command: `./kibana` (for *nix based OSs)
+
+
 ## Logstash
 
 ### Installation
