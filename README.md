@@ -23,9 +23,9 @@ output {
 2. Issue the command: `./bin/logstash -f sample.conf`
 
 4. On the console, input some sample text and expect a response printed out to the output, as shown in the image below:
-```
-[image](https://user-images.githubusercontent.com/1698230/191788287-8ee38237-5037-41df-b13c-16a7bee2034e.png)
-```
+
+![Console Output](https://user-images.githubusercontent.com/1698230/191788287-8ee38237-5037-41df-b13c-16a7bee2034e.png)
+
 
 Now that you have a working version of Logstash with a simple piepline, you can experiment with examples given under elastic-stack/logstash/conf/ directory. 
 
