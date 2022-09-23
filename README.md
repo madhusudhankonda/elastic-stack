@@ -12,6 +12,11 @@
 
 Go to bin directory and issue the follow command: `./elasticsearch` (for *nix based OSs)
 
+Once the server is up and running, use the examples/guidance provided here in these repository on my [GitHub](https://github.com/madhusudhankonda)
+- [Elasticsearch First Steps](https://github.com/madhusudhankonda/elasticsearch-first-steps)
+- [Elasticsearch Next Steps](https://github.com/madhusudhankonda/elasticsearch-next-steps)
+- My book [Elasticsearch in Action 2nd Ed](https://github.com/madhusudhankonda/elasticsearch-in-action)
+
 ## Kibana
 
 ### Installation
